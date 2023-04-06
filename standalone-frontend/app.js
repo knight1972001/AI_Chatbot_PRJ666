@@ -45,17 +45,19 @@ class Chatbox {
 
         let msg1 = { name: "User", message: text1 }
         this.messages.push(msg1);
+        console.log(msg1)
 
-        fetch('http://127.0.0.1:5000/predict', {
+        fetch('http://aichatbot6.azurewebsites.net/predict', {
             method: 'POST',
             body: JSON.stringify({ message: text1 }),
-            mode: 'cors',
+            mode: "no-cors",
             headers: {
               'Content-Type': 'application/json'
             },
           })
           .then(r => r.json())
           .then(r => {
+            console.log(r)
             let msg2 = { name: "Sam", message: r.answer };
             this.messages.push(msg2);
             this.updateChatText(chatbox)
