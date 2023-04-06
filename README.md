@@ -1,6 +1,10 @@
 # Chatbot Deployment with Flask, Docker and Azure
 
 Demo: [https://aichatbot6.azurewebsites.net/](https://aichatbot6.azurewebsites.net/)
+## Demo
+API: [https://aichatbot6.azurewebsites.net/](https://aichatbot6.azurewebsites.net/)
+![image](https://user-images.githubusercontent.com/60019805/230247288-fdde7f4b-a5fe-443d-ad84-0fcb6d40b97c.png)
+![image](https://user-images.githubusercontent.com/60019805/230247339-843a0e99-3e21-4ab7-b4ac-b6fa8b3c0e76.png)
 
 Serve only the Flask prediction API. The used html and javascript files can be included in any Frontend application (with only a slight modification) and can run completely separate from the Flask App then.
  
@@ -42,6 +46,7 @@ The stem ‘tak’ will match ‘take’, ‘taking’, ‘takers’, etc. We co
 `python chat.py`
 
 **Demo** using anaconda - Windows power shell to interactive with chatbot: 
+![using Anaconda](https://user-images.githubusercontent.com/60019805/230247221-74e4bcb9-3b4e-468b-92e2-6e5fbde0e370.png)
 
 ## Turning to API using Flask!
 `app.py` is the api server file.
@@ -97,5 +102,6 @@ Tag image same as loginServer and image:tag
 
 **Push** the docker image to ACR. then that's all.
 
-## Demo
-API: [https://aichatbot6.azurewebsites.net/](https://aichatbot6.azurewebsites.net/)
+
+
+
